@@ -1,0 +1,31 @@
+{
+  "Validates presence of": {
+    "prefix": "vpo",
+    "body": ["validates_presence_of :$1"],
+    "description": "Adds validates presence to model"
+  },
+
+  "Has many with dependent: :destroy": {
+    "prefix": "hm",
+    "body": ["has_many :$1, dependent: :destroy"],
+    "description": "Adds has many association to rails model"
+  },
+
+  "Belongs to relationship": {
+    "prefix": "bt",
+    "body": ["belongs_to :$1"],
+    "description": "Adds basic belongs_to to rails model"
+  },
+
+  "Optional belongs to relationship": {
+    "prefix": "bto",
+    "body": ["belongs_to :$1, optional: true"],
+    "description": "Adds optional belongs_to to rails model"
+  },
+
+  "attr_accessor": {
+    "prefix": "aa",
+    "body": ["attr_accessor :$1, :$2"],
+    "description": "Added attr_accessor method call"
+  }
+}
